@@ -1,8 +1,8 @@
 public class Student {
 
-    private String name;
+    private final String name;
     private char grade;
-    private int group;
+    private final int group;
     private final String SECRETNICKNAME = "MySecretNickName";
 
     public Student(String name, char grade, int group) {
