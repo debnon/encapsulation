@@ -1,23 +1,23 @@
 public class Student {
 
-    private final String NAME;
+    private final String name;
     private char grade;
-    private final int GROUP;
-    private final String SECRETNICKNAME = "MySecretNickName";
+    private final int group;
+    private final String SECRETNICKname = "MySecretNickname";
 
-    public Student(String NAME, char grade, int GROUP) {
+    public Student(String name, char grade, int group) {
 
         if (grade > 70 || grade < 65) {
             throw new IllegalArgumentException("The grade must be between A and F");
         }
 
-        if (GROUP > 5 || GROUP < 1) {
-            throw new IllegalArgumentException("The GROUP must be between 1 and 5");
+        if (group > 5 || group < 1) {
+            throw new IllegalArgumentException("The group must be between 1 and 5");
         }
 
-        this.NAME = NAME;
+        this.name = name;
         this.grade = grade;
-        this.GROUP = GROUP;
+        this.group = group;
     }
 
     public char displayGrade() {
@@ -25,7 +25,7 @@ public class Student {
     }
 
     public String displayName() {
-        return NAME;
+        return name;
     }
     
     public void upGrade() {
