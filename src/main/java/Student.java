@@ -28,7 +28,7 @@ public class Student {
     }
 
     public void downGrade() {
-        if (Character.toString(grade).equals("D")) {
+        if (Character.toString(grade).equals("F")) {
             System.out.println("The grade is already the lowest possible!");
         } else {
             grade += 1;

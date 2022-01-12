@@ -11,6 +11,8 @@ public class Main {
         student.downGrade();
         student.downGrade();
         student.downGrade();
+        student.downGrade();
+        student.downGrade();
         System.out.println(student.displayGrade());
 
         System.out.println(student.displayName());
