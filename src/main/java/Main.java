@@ -17,5 +17,8 @@ public class Main {
 
         System.out.println(student.displayName());
 
+        // Student student2 = new Student("Jane", 'Z', 3);
+        Student student3 = new Student("Doe", 'E', 6);
+
     }
 }

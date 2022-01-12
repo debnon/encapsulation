@@ -6,6 +6,15 @@ public class Student {
     private final String SECRETNICKNAME = "MySecretNickName";
 
     public Student(String name, char grade, int group) {
+
+        if (grade > 70 || grade < 65) {
+            throw new IllegalArgumentException("The grade must be between A and F");
+        }
+
+        if (group > 5 || group < 1) {
+            throw new IllegalArgumentException("The group must be between 1 and 5");
+        }
+
         this.name = name;
         this.grade = grade;
         this.group = group;
