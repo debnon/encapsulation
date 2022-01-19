@@ -3,11 +3,13 @@ public class Student {
     private final String name;
     private char grade;
     private final int group;
-    private final String SECRETNICKname = "MySecretNickname";
+    private final String SECRETNICKNAME = "MySecretNickname";
 
     public Student(String name, char grade, int group) {
+        int gradeA  = 65;
+        int gradeF = 70;
 
-        if (grade > 70 || grade < 65) {
+        if (grade > gradeF || grade < gradeA) {
             throw new IllegalArgumentException("The grade must be between A and F");
         }
 
